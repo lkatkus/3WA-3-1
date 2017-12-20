@@ -1,0 +1,119 @@
+@import url("normalize.css");
+
+@font-face {
+    font-family: SpecialElite;
+    src: url("../fonts/SpecialElite.woff");
+}
+
+@font-face {
+    font-family: Cardo;
+    src: url("../fonts/cardo/cardo-regular.woff"),
+}
+
+@font-face {
+    font-family: CardoItalic;
+    src: url("../fonts/cardo/cardo-italic.woff"),
+}
+
+@font-face {
+    font-family: CardoBold;
+    src: url("../fonts/cardo/cardo-bold.woff");
+}
+
+body{
+    font-family: Cardo;
+    background: linear-gradient(to top, #DFE8EC 0%, white 5%);
+    background-size: 100% 20px;
+}
+
+div.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    color: grey;
+    text-transform: lowercase;
+    margin: 2rem 0 2rem 0;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: SpecialElite;
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 2rem 0 2rem 0;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: SpecialElite;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 2rem 0 1rem 0;
+}
+
+h3{
+    text-transform: uppercase;
+    font-family: SpecialElite;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 2rem 0 1rem 0;
+}
+
+h3::before{
+    content: "❧ ";
+    font-size: 1.5rem;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+blockquote{
+    margin: 0 0 2rem 0;
+    font-style: italic;
+    text-align: justify;
+}
+
+blockquote.bigQuotes::before{
+    content: "❝";
+    color: #d3d3d3;
+    font-size: 3rem;
+    float: left;
+    margin-left: -40px;
+    margin-top: -20px;
+}
+
+cite{
+    font-variant: small-caps;
+    display: block;
+    text-align: right;
+    font-style: normal;
+    margin-top: 0.5rem;
+}
+
+p{
+    text-align: justify;
+}
+
+p+p{
+    margin: 1rem 0 0 0;
+}
+
+h2 + p::first-letter{
+    font-family: SpecialElite;
+    font-size: 2rem;
+    float:left;
+    margin-top: 0.7rem;
+    margin-right: 5px;
+    line-height: 1rem;
+}
+
+q:before {content: '« '; color:grey;}
+q:after {content: ' »'; color:grey;}
